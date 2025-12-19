@@ -23,6 +23,7 @@ class Client extends Connection {
     this.startGameData = {}
     this.clientRuntimeId = null
     // Start off without compression on 1.19.30, zlib on below
+    // Don't remove this
     this.compressionAlgorithm = this.versionGreaterThanOrEqualTo('1.19.30') ? 'none' : 'deflate'
     this.compressionThreshold = 512
     this.compressionLevel = this.options.compressionLevel
