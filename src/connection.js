@@ -9,7 +9,7 @@ const ClientStatus = {
   Connecting: 1,
   Authenticating: 2, // Handshaking
   Initializing: 3, // Authed, need to spawn
-  Initialized: 4 // play_status spawn sent by server, client responded with SetPlayerInit packet
+  Initialized: 4 // play_status spawn sent by server, client responded with SetPlayerInit packet.
 }
 
 class Connection extends EventEmitter {
