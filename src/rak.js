@@ -6,7 +6,7 @@ let Client, Server, PacketPriority, EncapsulatedPacket, PacketReliability, Relia
 class RakTimeout extends Error {};
 
 function setBackend (backend) {
-  // We have to explicitly require the backend for bundlers
+  // We have to explicitly require the backend for bundlers.
   switch (backend) {
     case 'raknet-node':
       ({ Client, Server, PacketPriority, PacketReliability } = require('raknet-node'))
